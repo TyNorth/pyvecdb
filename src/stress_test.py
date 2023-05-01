@@ -47,3 +47,5 @@ if __name__ == "__main__":
     db = VectorDB(db_path=db_path)
     create_stress_test_table(db)
     stress_test(db, num_entries=100, num_searches=10)
+
+
