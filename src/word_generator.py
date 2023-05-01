@@ -6,16 +6,20 @@ nouns = ["dog", "cat", "bird", "fish", "computer", "book", "building", "house", 
 verbs = ["runs", "jumps", "eats", "sleeps", "reads", "drives", "talks", "walks", "flies", "swims", "plays", "works", "sings", "dances", "climbs", "hikes", "bikes", "rides", "draws", "paints", "writes", "types", "codes", "programs", "builds", "makes", "creates", "destroys", "fights", "battles", "attacks", "defends", "hunts", "hides", "seeks", "finds", "loses", "wins", "loses", "cries", "laughs", "smiles", "frowns", "screams", "yells", "whispers", "talks", "speaks", "listens", "hears", "sees", "looks", "watches", "stares", "touches", "feels", "tastes", "smells", "kicks", "punches", "hits", "stabs", "shoots", "kills", "murders", "saves", "helps", "hurts", "harms", "heals", "fixes", "repairs", "builds", "creates", "destroys", "fights", "battles", "attacks", "defends", "hunts", "hides", "seeks", "finds", "loses", "wins", "loses", "cries", "laughs", "smiles", "frowns", "screams", "yells", "whispers", "talks", "speaks", "listens", "hears", "sees", "looks", "watches", "stares", "touches", "feels", "tastes", "smells", "kicks", "punches", "hits", "stabs", "shoots", "kills", "murders", "saves", "helps", "hurts", "harms", "heals", "fixes", "repairs", "builds", "creates", "destroys", "fights", "battles", "attacks", "defends", "hunts", "hides", "seeks", "finds", "loses", "wins", "loses", "cries", "laughs", "smiles", "frowns", "screams", "yells", "whispers", "talks", "speaks", "listens", "hears", "sees"]
 adjectives = ["happy", "sad", "angry", "funny", "silly", "serious", "tall", "short", "big", "small", "fast", "slow", "loud", "quiet", "hot", "cold", "warm", "cool", "dark", "light", "bright", "shiny", "dull", "sharp", "blunt", "hard", "soft", "rough", "smooth", "wet", "dry", "clean", "dirty", "messy", "neat", "tidy", "strong", "weak", "powerful", "weak", "powerful", "smart", "dumb", "stupid", "brave", "cowardly", "kind", "mean", "nice", "mean", "nice", "friendly", "unfriendly", "good", "bad", "evil", "honest", "dishonest", "loyal", "disloyal", "faithful", "unfaithful", "trustworthy", "untrustworthy", "beautiful", "ugly", "pretty", "handsome", "attractive", "repulsive", "repugnant", "disgusting", "delicious", "tasty", "yummy", "gross", "disgusting", "delicious", "tasty", "yummy", "gross", "healthy", "unhealthy", "sick", "ill", "diseased", "infected", "contagious", "deadly", "fatal", "safe", "dangerous", "risky", "harmless", "harmful", "helpful", "useful", "useless", "worthless", "valuable", "precious", "priceless", "cheap", "expensive", "rich", "poor", "wealthy", "broke", "boring", "interesting", "exciting", "fun", "bored", "interested", "excited", "funny", "silly", "serious", "tall", "short", "big", "small", "fast", "slow", "loud", "quiet", "hot", "cold", "warm", "cool", "dark", "light", "bright", "shiny", "dull", "sharp", "blunt", "hard", "soft", "rough", "smooth", "wet", "dry", "clean", "dirty", "messy", "neat", "tidy", "strong", "weak", "powerful", "weak", "powerful", "smart"]
 adverbs = ["quickly", "slowly", "easily", "hardly", "happily", "sadly", "angrily", "loudly", "quietly", "suddenly", "finally", "secretly", "safely", "quickly", "slowly"]
+articles = ["the", "a", "an"]
+pronouns = ["he", "she", "it", "they", "we", "you", "I"]
 
 # Function to generate a random sentence
 def generate_sentence():
     sentence = []
-    sentence.append(random.choice(nouns))
-    sentence.append(random.choice(verbs))
-    sentence.append(random.choice(adverbs))
-    sentence.append(random.choice(adjectives))
-    sentence.append(random.choice(nouns))
+    sentence.append(pronouns[random.randint(0, len(pronouns) - 1)])
+    sentence.append(verbs[random.randint(0, len(verbs) - 1)])
+    sentence.append(articles[random.randint(0, len(articles) - 1)])
+    sentence.append(adjectives[random.randint(0, len(adjectives) - 1)])
+    sentence.append(nouns[random.randint(0, len(nouns) - 1)])
+    sentence.append(adverbs[random.randint(0, len(adverbs) - 1)])
     return " ".join(sentence)
+
 
 # Test the function by generating 5 random sentences
 for i in range(5):

@@ -23,3 +23,30 @@ class DataObject:
         if not isinstance(other, DataObject):
             return False
         return self.id == other.id and self.vector == other.vector and self.message == other.message and self.timestamp == other.timestamp
+    
+    def __hash__(self) -> int:
+        return hash((self.id, self.vector, self.message, self.timestamp))
+    
+
+    
+    def get_id(self):
+        return self.id
+    
+    def get_timestamp(self):
+        return self.timestamp
+    
+    def get_message(self):
+        return self.message
+    
+    def get_vector(self):
+        return self.vector
+    
+    def set_id(self, id):
+        self.id = id
+
+    def set_timestamp(self, timestamp):
+        self.timestamp = timestamp
+
+
+    def set_message(self, message):
+        self.message = message
