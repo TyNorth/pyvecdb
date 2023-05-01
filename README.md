@@ -45,7 +45,7 @@ entries = db.search_entries(vector=entry.vector, num_results=10)
 
 ## Documentation
 
-For detailed documentation and examples, please visit the [official documentation](https://example.com/docs).
+For detailed documentation and examples, please visit the [official documentation](https://github.com/TyroneNorth/pyvecdb/blob/master/Docs.md).
 
 ## Contributing
 
