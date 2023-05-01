@@ -54,3 +54,10 @@ Contributions are welcome! Please read our [contributing guidelines](CONTRIBUTIN
 ## License
 
 PyVecDB is released under the [MIT License](LICENSE).
+
+## Support
+
+If you like my work consider buying me a coffee ☕ Support my work on Patreon or PayPal!
+
+[![Support me on Patreon](https://img.shields.io/badge/patreon-support-%23e85b46.svg?logo=patreon&style=for-the-badge)](https://www.patreon.com/SimulatedDev)
+
